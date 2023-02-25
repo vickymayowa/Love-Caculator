@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE CACULATOR</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+ </head>
+<body style="background-image: url(https://media.tenor.com/dg09ryumxs8AAAAC/heart-pink.gif);">
+      <div class="container-fluid h-50 rounded mt-5;" style="width: 560px;">
+        <div class="row mt-5">
+        <div class="col-9 mx-auto shadow-lg w-75 mt-2 bg-dark" style="height: 400px;">
+            <h2 class=" mx-auto text text-white" align="center">VICKY LOVE CACULATOR</h2>
+            <marquee behavior="" direction="" style="font-size: 30px; color: white;">Kindly Input your Name and your Partner Name</marquee>
+            <h3 class="mt-2 mx-auto my-4 me-4 text text-white">Name</b>
+            <input type="text" placeholder="Enter your Name" id="fn" class="form-control my-2 mx-auto w-75 mt-2">
+            <h3 class="mt-2 my-2 text text-white">Lover Name</b>
+            <input type="text" placeholder="Enter your lover Name" id="ln" class="form-control my-2 mx-auto w-75">
+            <div id="disp"></div>
+            <button onclick="love()" class="btn bg-primary mx-auto mt-2" align="cent" style="font-size: 25px; position: relative; left: 40px;">
+                CHECK lOVE</button>
+          </div>
+    </div>
+</div>
+            <script>
+                function love(){
+                    var randomNumber = Math.round(Math.random()*100)
+                    if(fn.value=="" || ln.value==""){
+                        alert("Input A Name")
+                    } else if(randomNumber){
+                        alert("YOUR LOVE PERCENTAGE  IS "+ randomNumber  +"%")
+                    } 
+                    fn.value=""
+                    ln.value=""
+                }
+            </script>
+</body>
+</html>
